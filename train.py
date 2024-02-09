@@ -1,5 +1,5 @@
 #importing the necessary libraires 
-from tensorflow import keras
+
 import matplotlib.pyplot as plt
 from keras.models import Sequential
 from keras.applications import VGG16
@@ -23,7 +23,7 @@ def create_transfer_model():
     for layer in base_model.layers:
         layer.trainable = False
 
-    optimizer = RMSprop(lr=0.001, rho=0.9, epsilon=1e-08, decay=0.0)
+    optimizer = RMSprop(lr=0.001, rho=0.9, epsilon=1e-08)
     model.compile(optimizer=optimizer, loss="categorical_crossentropy", metrics=["accuracy"])
 
     return model
@@ -50,7 +50,7 @@ def create_cnn_model():
     model.add(Dropout(0.5))
     model.add(Dense(5, activation="softmax"))
 
-    optimizer = RMSprop(lr=0.001, rho=0.9, epsilon=1e-08, decay=0.0)
+    optimizer = RMSprop(lr=0.001, rho=0.9, epsilon=1e-08)
     model.compile(optimizer=optimizer, loss="categorical_crossentropy", metrics=["accuracy"])
 
     return model
