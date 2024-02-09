@@ -5,7 +5,7 @@
 The objective of this project is to compare the performance of a Convolutional Neural Network (CNN) trained from scratch with one trained using transfer learning. The comparison will be based on a dataset of plantation images sourced from Kaggle. The dataset consists of images of five types of plantations: jute, corn, rice, wheat, and sugarcane.
 
 **Dependencies:**  
-- Python packages utilized:
+Python packages utilized:
   - Keras: for building and configuring the CNN models
   - Scikitlearn: For analyzing the performance of the models
   - Matplotlib: For representing the performance of the models
