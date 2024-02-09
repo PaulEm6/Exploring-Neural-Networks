@@ -6,8 +6,9 @@ The objective of this project is to compare the performance of a Convolutional N
 
 **Dependencies:**  
 - Python packages utilized:
-  - TensorFlow: for building and training the CNN models
   - Keras: for building and configuring the CNN models
+  - Scikitlearn: For analyzing the performance of the models
+  - Matplotlib: For representing the performance of the models
   - Other necessary libraries for data handling and visualization
 
 **Algorithm Performance:**  
